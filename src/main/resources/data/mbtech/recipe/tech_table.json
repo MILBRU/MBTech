@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "ICI",
+    " I "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:crafting_table"
+  },
+  "result": {
+    "count": 1,
+    "id": "mbtech:tech_table",
+    "components": {
+      "minecraft:custom_name": "'{\"text\":\"Tech Table\",\"color\":\"yellow\",\"italic\":false}'"
+    }
+  }
+}
