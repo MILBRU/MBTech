@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mbtech",
+  "version": "${version}",
+  "name": "MBTech",
+  "description": "A tech mod similar to PaperMC's Slimefun Plugin",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/mbtech/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.milbru.mbtech.client.MbtechDataGenerator"
+    ],
+    "main": [
+      "org.milbru.mbtech.Mbtech"
+    ]
+  },
+  "mixins": [
+    "mbtech.mixins.json",
+    {
+      "config": "mbtech.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
